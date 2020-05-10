@@ -46,7 +46,7 @@ function jsonResponse(req, res, next) {
   return res.json(res.locals);
 }
 const hostname = process.env.HOST;
-const port = process.env.PORT;
+const port = process.env.PORT || 5000;
 app.listen(port, hostname, () => {
   console.log(`API listening at http://${hostname}:${port}`);
 });
