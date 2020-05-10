@@ -47,6 +47,6 @@ function jsonResponse(req, res, next) {
 }
 const hostname = process.env.HOST;
 const port = process.env.PORT || 5000;
-app.listen(port, hostname, () => {
+app.listen(port, () => {
   console.log(`API listening at http://${hostname}:${port}`);
 });
